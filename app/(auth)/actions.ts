@@ -6,8 +6,9 @@ import { createUser, getUser } from '@/lib/db/queries';
 
 import { signIn } from './auth';
 
+const allowedEmails = JSON.parse(`"${process.env.ALLOWED_EMAILS}"`);
 const authFormSchema = z.object({
-  email: z.string().email(),
+  email: z.string().email().refine((email) => allowedEmails.includes(email)),
   password: z.string().min(6),
 });
 
