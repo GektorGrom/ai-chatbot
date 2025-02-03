@@ -42,7 +42,8 @@ export const systemPrompt = ({
   if (selectedChatModel === 'chat-model-reasoning') {
     return regularPrompt;
   } else {
-    return `${regularPrompt}\n\n${blocksPrompt}`;
+    // return `${regularPrompt}\n\n${blocksPrompt}`;
+    return regularPrompt;
   }
 };
 
