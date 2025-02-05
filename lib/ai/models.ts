@@ -27,7 +27,8 @@ export const myProvider = customProvider({
     'block-model': openai('gpt-4o-mini'),
   },
   imageModels: {
-    'small-model': openai.image('dall-e-3'),
+    'small-model': openai.image('dall-e-2'),
+    'large-model': openai.image('dall-e-3'),
   },
 });
 
