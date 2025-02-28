@@ -24,7 +24,7 @@ export const myProvider = customProvider({
       middleware: extractReasoningMiddleware({ tagName: 'think', separator: 'break\n' }),
     }),
     'title-model': openai('gpt-4-turbo'),
-    'block-model': openai('gpt-4o-mini'),
+    'artifact-model': openai('gpt-4o-mini'),
   },
   imageModels: {
     'small-model': openai.image('dall-e-2'),
