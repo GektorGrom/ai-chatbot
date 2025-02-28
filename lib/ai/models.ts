@@ -18,7 +18,7 @@ export const myProvider = customProvider({
     'anthropic.claude-3-5-haiku-20241022-v1:0': bedrock('anthropic.claude-3-5-haiku-20241022-v1:0'),
     'anthropic.claude-3-5-sonnet-20241022-v2:0': bedrock('anthropic.claude-3-5-sonnet-20241022-v2:0'),
     'chat-model-small': openai('gpt-4o-mini'),
-    'chat-model-large': openai('gpt-4o'),
+    'chat-model-large': openai('gpt-4.5-preview-2025-02-27'),
     'chat-model-reasoning': wrapLanguageModel({
       model: openai('o1-preview'),
       middleware: extractReasoningMiddleware({ tagName: 'think', separator: 'break\n' }),
