@@ -40,7 +40,12 @@ interface ChatModel {
 
 export const chatModels: Array<ChatModel> = [
   {
-    id: 'chat-model',
+    id: 'chat-model-small',
+    name: 'Chat model small',
+    description: 'Primary model for all-purpose chat',
+  },
+  {
+    id: 'chat-model-large',
     name: 'Chat model',
     description: 'Primary model for all-purpose chat',
   },

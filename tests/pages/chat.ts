@@ -97,7 +97,6 @@ export class ChatPage {
     const chatModel = chatModels.find(
       (chatModel) => chatModel.id === chatModelId,
     );
-
     if (!chatModel) {
       throw new Error(`Model with id ${chatModelId} not found`);
     }

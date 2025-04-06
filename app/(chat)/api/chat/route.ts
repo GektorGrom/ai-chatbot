@@ -78,7 +78,7 @@ export async function POST(request: Request) {
         },
       ],
     });
-
+    console.log(selectedChatModel);
     return createDataStreamResponse({
       execute: (dataStream) => {
         const result = streamText({
