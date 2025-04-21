@@ -32,7 +32,7 @@ export const myProvider = isTestEnvironment
       'anthropic.claude-3-5-haiku-20241022-v1:0': bedrock('anthropic.claude-3-5-haiku-20241022-v1:0'),
       'anthropic.claude-3-5-sonnet-20241022-v2:0': bedrock('anthropic.claude-3-5-sonnet-20241022-v2:0'),
       'chat-model-small': openai('gpt-4o-mini'),
-      'chat-model-large': openai('gpt-4.5-preview'),
+      'chat-model-large': openai('gpt-4.1'),
       'chat-model-reasoning': wrapLanguageModel({
         model: openai('o1'),
         middleware: extractReasoningMiddleware({tagName: 'think', separator: 'break\n'}),
@@ -45,3 +45,4 @@ export const myProvider = isTestEnvironment
       'large-model': openai.image('dall-e-3'),
     },
   });
+
